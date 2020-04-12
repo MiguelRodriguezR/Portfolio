@@ -11,6 +11,7 @@ VanillaTilt.init(document.querySelector(".card"), {
     gyroscopeMinAngleX: -45,
     gyroscopeMaxAngleX: 45,
     gyroscopeMinAngleY: -45,
-    gyroscopeMaxAngleY: 45
+    gyroscopeMaxAngleY: 45,
+    gyroscopeSamples: 10
 })
 ;
