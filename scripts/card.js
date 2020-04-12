@@ -6,4 +6,11 @@ VanillaTilt.init(document.querySelector(".card"), {
     scale: 1.05,
     glare: true,
     "max-glare": 0.1,
-});
+
+    gyroscope: true,
+    gyroscopeMinAngleX: -45,
+    gyroscopeMaxAngleX: 45,
+    gyroscopeMinAngleY: -45,
+    gyroscopeMaxAngleY: 45
+})
+;
