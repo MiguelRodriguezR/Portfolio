@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="icon" href="./img/mr.png" type="image/png">
+    <title>Miguel Rodriguez</title>
+</head>
+<body>
+    <select id="lang" onchange="setLanguage()">
+        <option value="es">Spanish 🇪🇸</option>
+        <option value="en">English 🇺🇸</option>
+    </select>
+    <div class="loader">
+        <div class="text-loader">
+            CARGANDO...
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="logo-container">
+                    <h2 class="down-line">M</h2>
+                    <h2>R</h2>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <div class="nav-menu">
+                    <div id="nav-about" ></div>
+                    <div class="bottom-bar"></div>
+                </div>
+                <div class="nav-menu">
+                    <div id="nav-portfolio"></div>
+                    <div class="bottom-bar"></div>
+                </div>
+                <div class="nav-menu">
+                    <div id="nav-contact"></div>
+                    <div class="bottom-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="principal">
+            <div id="home-card" class="card">
+                <div class="graphs">
+                    <div class="line-1"></div>
+                    <div class="circle-1"></div>
+                </div>
+                <div class="card-content">
+                    <div class="left-image">
+                        <img class="li-shadow" src="img/shape.png" alt="">
+                        <!--<div class="li-shadow"></div>-->
+                        <div class="me">
+                            <img class="me-img" src="img/me.png" alt="">
+                            <img class="post-effect" src="img/silueta.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right-text">
+                        <div id="hello-text" class="top-text"></div>
+                        <div id="developer-text" class="middle-text"></div>
+                        <div id="awesome-text" class="bottom-text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="./languages/english-lang.js"></script>
+<script src="./languages/spanish-lang.js"></script>
+<script src="./scripts/animations.js"></script>
+<script src="./scripts/script.js"></script>
+<script src="./scripts/languaje.js"></script>
+<script src="./scripts/card.js"></script>
+
+</html>

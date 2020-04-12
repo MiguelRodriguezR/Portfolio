@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|family=Lato:wght@300|Montserrat&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%) no-repeat;
+    height: 100vh;
+    color: #c3c3c3;
+    overflow: hidden;
+}
+
+.loader{
+    bottom: 0;
+    left: 0;
+    background-color: #090A0F;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
+
+.main-container{
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.navbar{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.logo-container{
+    cursor: pointer;
+    padding: 4px;
+    border: solid 4px white;
+    transition: all 0.3s;
+}
+
+.logo-container:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.logo-container > h2{
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.down-line{
+    /*border-bottom: solid 2px white;*/
+}
+
+.navbar-right{
+    font-weight: bold;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu{
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.bottom-bar {
+    width: 1px;
+    border-bottom: solid 3px transparent;
+    transition: all 0.3s ease-out;
+}
+
+.nav-menu:hover{
+    color: white;
+}
+
+.nav-menu:hover > .bottom-bar {
+    border-color: white;
+    width: 100%;
+}
+
+.principal{
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#lang{
+    width: 20px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+    .principal{
+        height: 66vh;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar-right{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
