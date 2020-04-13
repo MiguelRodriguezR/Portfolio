@@ -197,6 +197,24 @@
 
 @media (max-width: 1024px) {
 
+    .left-text > .top-text{
+      font-size: 3.5vw;
+    }
+
+    .left-text > .bottom-text{
+        margin-top: 5px;
+        font-size: 2vw;
+    }
+
+    .button{
+        margin-top: 20px;
+    }
+
+    .contact-form{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .me-img, .li-shadow, .post-effect{
         display: none;
@@ -231,6 +249,26 @@
 }
 
 @media (max-width: 600px) {
+
+    .about-section .top-text{
+        text-align: center;
+    }
+
+    .contact-form > .left-text{
+        width: 80%;
+    }
+
+    .contact-form > .right-buttons{
+        width: 60%;
+    }
+
+    .left-text > .top-text{
+        font-size: 5.5vw;
+    }
+
+    .left-text > .bottom-text{
+        font-size: 3.5vw;
+    }
 
     .card{
         height: 60vh;

@@ -16,3 +16,15 @@
 
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    .technologie img{
+        width: 50px;
+    }
+
+    .technologie{
+        width: 70px;
+        height: 70px;
+        font-size: 0.7em;
+    }
+}

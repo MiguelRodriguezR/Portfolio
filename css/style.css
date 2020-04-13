@@ -175,6 +175,7 @@ a{
     }
 
     .navbar-right{
+        font-size: 0.8em;
         margin-top: 30px;
         width: 100%;
     }
