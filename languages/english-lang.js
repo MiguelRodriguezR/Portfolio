@@ -11,5 +11,6 @@ var english = {
     "touch":"Get In Touch",
     "talk":'Want to talk? my inbox is always open. Whether for new projects, opportunities or just to say hi,',
     "contactButton":"Contact me",
+    "loading":"LOADING..."
 
 };

@@ -11,4 +11,5 @@ var spanish = {
     "touch":"Pongamonos en contacto",
     "talk":'¿ Tienes algo en mente? mi inbox esta 100% disponible. ya sea para un proyecto, una oportunidad o simplemente para charlar',
     "contactButton":"Contactame",
+    "loading":"CARGANDO..."
 };

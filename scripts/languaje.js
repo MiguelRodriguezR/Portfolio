@@ -17,6 +17,7 @@ function setTextOnHtml() {
     setText('touch-text','touch', false);
     setText('talk-text','talk', false);
     setText('contact-button','contactButton', false);
+    setText('loading-text','loading', true);
 }
 
 function setText(id, atribute, upercase){
