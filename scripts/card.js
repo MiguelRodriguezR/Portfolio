@@ -1,4 +1,4 @@
-VanillaTilt.init(document.querySelector(".card"), {
+VanillaTilt.init(document.querySelectorAll(".card"), {
     max: 10,
     speed: 1100,
     transition: true,
@@ -15,3 +15,17 @@ VanillaTilt.init(document.querySelector(".card"), {
     gyroscopeSamples: 10
 })
 ;
+
+function activeCard(card) {
+    let deactive = document.querySelector('.card-active');
+    if(deactive){
+        deactive.classList.remove("card-active");
+        deactive.classList.add("card-deactive");
+    } else{
+        document.querySelector('#home-card').classList.add("card-deactive");
+    }
+    let active = document.querySelector('#'+card);
+    active.classList.remove("card-hidden");
+    active.classList.remove("card-deactive");
+    active.classList.add("card-active");
+}

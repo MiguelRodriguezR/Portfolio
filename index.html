@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/shapes.css">
+    <link rel="stylesheet" href="css/technologies.css">
     <link rel="icon" href="./img/mr.png" type="image/png">
     <title>Miguel Rodriguez</title>
 </head>
@@ -16,53 +18,119 @@
         <option value="es">Spanish 🇪🇸</option>
         <option value="en">English 🇺🇸</option>
     </select>
+    <div class="language-selector">
+        <div class="language-content">
+            <div class="big-text">Select Language</div>
+            <div class="buttons">
+                <a onclick="setLanguageFromMenu('en')" class="button"> ENGLISH </a>
+                <a onclick="setLanguageFromMenu('es')" class="button"> SPANISH </a>
+            </div>
+        </div>
+    </div>
     <div class="loader">
         <div class="text-loader">
-            CARGANDO...
+            LOADING...
         </div>
     </div>
     <div class="main-container">
         <div class="navbar">
             <div class="navbar-left">
-                <div class="logo-container">
+                <div class="logo-container" onclick="activeCard('home-card')">
                     <h2 class="down-line">M</h2>
                     <h2>R</h2>
                 </div>
             </div>
             <div class="navbar-right">
-                <div class="nav-menu">
+                <div class="nav-menu" onclick="activeCard('about-card')">
                     <div id="nav-about" ></div>
                     <div class="bottom-bar"></div>
                 </div>
-                <div class="nav-menu">
+                <div class="nav-menu" onclick="activeCard('portfolio-card')">
                     <div id="nav-portfolio"></div>
                     <div class="bottom-bar"></div>
                 </div>
-                <div class="nav-menu">
+                <div class="nav-menu" onclick="activeCard('contact-card')">
                     <div id="nav-contact"></div>
                     <div class="bottom-bar"></div>
                 </div>
             </div>
         </div>
         <div class="principal">
-            <div id="home-card" class="card">
-                <div class="graphs">
-                    <div class="line-1"></div>
-                    <div class="circle-1"></div>
-                </div>
-                <div class="card-content">
-                    <div class="left-image">
-                        <img class="li-shadow" src="img/shape.png" alt="">
-                        <!--<div class="li-shadow"></div>-->
-                        <div class="me">
-                            <img class="me-img" src="img/me.png" alt="">
-                            <img class="post-effect" src="img/silueta.png" alt="">
+            <div id="home-card" class="card-container ">
+                <div  class="card">
+                    <div class="graphs">
+                        <div class="line-1"></div>
+                        <div class="circle-1"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="left-image">
+                            <img class="li-shadow" src="img/shape.png" alt="">
+                            <!--<div class="li-shadow"></div>-->
+                            <div class="me">
+                                <img class="me-img" src="img/me.png" alt="">
+                                <img class="post-effect" src="img/silueta.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-text">
+                            <div id="hello-text" class="top-text"></div>
+                            <div id="developer-text" class="middle-text"></div>
+                            <div id="awesome-text" class="bottom-text"></div>
                         </div>
                     </div>
-                    <div class="right-text">
-                        <div id="hello-text" class="top-text"></div>
-                        <div id="developer-text" class="middle-text"></div>
-                        <div id="awesome-text" class="bottom-text"></div>
+                </div>
+            </div>
+            <div id="about-card" class="card-container card-hidden">
+                <div  class="card">
+                    <div class="graphs">
+                        <div class="circle-2"></div>
+                        <div class="line-2"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="about-section">
+                            <div class="top-text">
+                                <div id="technologies-text" class="title-text"></div>
+                            </div>
+                            <div class="technologies-section"></div>
+                            <div class="top-text">
+                                <div id="methodologies-text" class="title-text"></div>
+                            </div>
+                            <div class="standars-section"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-card" class="card-container card-hidden">
+                <div  class="card">
+                    <div class="graphs">
+                        <div class="line-1"></div>
+                        <div class="circle-3"></div>
+                    </div>
+                    <div class="card-content">
+                        <div id="construction-text" class="construction-text"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-card" class="card-container card-hidden">
+                <div  class="card">
+                    <div class="graphs">
+                        <div class="circle-2"></div>
+                        <div class="line-1"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="contact-form">
+                            <div class="left-text">
+                                <div id="touch-text" class="top-text"></div>
+                                <div id="talk-text" class="bottom-text"></div>
+                            </div>
+                            <div class="right-buttons">
+                                <a id="contact-button"
+                                   class="button"
+                                   target="_blank"
+                                   href="mailto:miguel.a.rodriguez.r@gmail.com">
+
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,6 +143,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 <script src="./languages/english-lang.js"></script>
 <script src="./languages/spanish-lang.js"></script>
+<script src="technologies/technologies-standars-list.js"></script>
 <script src="./scripts/animations.js"></script>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/languaje.js"></script>

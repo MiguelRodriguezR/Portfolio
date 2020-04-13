@@ -10,6 +10,33 @@ body{
     overflow: hidden;
 }
 
+.big-text{
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.language-selector{
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    background-color: #090A0F;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+}
+
+.language-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .loader{
     bottom: 0;
     left: 0;
@@ -112,6 +139,30 @@ body{
     right: 10px;
     top: 10px;
     opacity: 0.2;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+a{
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {

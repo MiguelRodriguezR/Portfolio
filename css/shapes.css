@@ -1,0 +1,48 @@
+.line-1{
+    width: 45%;
+    height: 80%;
+    margin-top: -90px;
+    margin-left: -60px;
+    border: solid 20px gainsboro;
+}
+
+.line-2{
+    width: 20%;
+    height: 100%;
+    margin-top: -90px;
+    margin-right: 200px;
+    background-color: gainsboro;
+    border: solid 20px gainsboro;
+}
+
+.circle-1{
+    background-color: gainsboro;
+    align-self: flex-end;
+    width: 25vw;
+    height: 25vw;
+    margin-bottom: -120px;
+    margin-right: -60px;
+    border: solid 20px gainsboro;
+    border-radius: 50%;
+}
+
+.circle-2{
+    justify-self: center;
+    align-self: flex-end;
+    width: 30vw;
+    height: 30vw;
+    margin-bottom: -120px;
+    margin-left: -60px;
+    border: solid 20px gainsboro;
+    border-radius: 50%;
+}
+
+.circle-3{
+    align-self: flex-end;
+    width: 25vw;
+    height: 25vw;
+    margin-bottom: -120px;
+    margin-right: -60px;
+    border: solid 20px gainsboro;
+    border-radius: 50%;
+}

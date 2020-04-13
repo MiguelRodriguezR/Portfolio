@@ -1,0 +1,18 @@
+.technologie{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologie img{
+    width: 80px;
+}
+
+.techno-text{
+
+    text-align: center;
+}
