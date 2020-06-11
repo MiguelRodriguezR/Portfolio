@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/shapes.css">
     <link rel="stylesheet" href="css/technologies.css">
     <link rel="icon" href="./img/mr.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Miguel Rodriguez</title>
 </head>
 <body>
@@ -75,6 +76,11 @@
                             <div id="hello-text" class="top-text"></div>
                             <div id="developer-text" class="middle-text"></div>
                             <div id="awesome-text" class="bottom-text"></div>
+                            <a id="contact-button-principal"
+                               class="button initial-button"
+                               onclick="activeCard('contact-card')"
+                               href="#">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -87,6 +93,10 @@
                     </div>
                     <div class="card-content">
                         <div class="about-section">
+                            <div class="top-description">
+                                <div id="intro-myself"></div>
+                                <div></div>
+                            </div>
                             <div class="top-text">
                                 <div id="technologies-text" class="title-text"></div>
                             </div>
@@ -106,7 +116,8 @@
                         <div class="circle-3"></div>
                     </div>
                     <div class="card-content">
-                        <div id="construction-text" class="construction-text"></div>
+                        <!--<div id="construction-text" class="construction-text"></div>-->
+                        <div id="projects-section" class="projects-section"></div>
                     </div>
                 </div>
             </div>
@@ -139,11 +150,11 @@
     </div>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 <script src="./languages/english-lang.js"></script>
 <script src="./languages/spanish-lang.js"></script>
 <script src="technologies/technologies-standars-list.js"></script>
+<script src="./projects/projects.js"></script>
 <script src="./scripts/animations.js"></script>
 <script src="./scripts/script.js"></script>
 <script src="./scripts/languaje.js"></script>

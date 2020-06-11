@@ -13,11 +13,13 @@ function setTextOnHtml() {
     setText('awesome-text','awesome', false);
     setText('technologies-text','technoligies', true);
     setText('methodologies-text','methodologies', true);
-    setText('construction-text','construction', false);
+    // setText('construction-text','construction', false);
     setText('touch-text','touch', false);
     setText('talk-text','talk', false);
     setText('contact-button','contactButton', false);
+    setText('contact-button-principal','contactButton', false);
     setText('loading-text','loading', true);
+    setText('intro-myself','introMyself', false);
 }
 
 function setText(id, atribute, upercase){
